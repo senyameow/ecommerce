@@ -31,7 +31,6 @@ export async function POST(req: Request) {
         return NextResponse.json(size, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_SIZE_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }
@@ -51,7 +50,6 @@ export async function GET(req: Request) {
         return NextResponse.json(sizes, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_SIZE_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

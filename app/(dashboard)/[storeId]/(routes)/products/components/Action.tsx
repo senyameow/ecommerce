@@ -63,7 +63,6 @@ export const Action = ({ product, defaultVal }: ActionProps) => {
 
 
         } catch (error) {
-            console.log('DELETE_product_ERROR', error)
         } finally {
             setIsLoading(false)
             onClose()

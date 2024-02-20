@@ -33,7 +33,6 @@ export async function DELETE(req: Request, { params }: { params: { colorId: stri
 
 
     } catch (error) {
-        console.log(error)
         return new NextResponse('Internal Error', { status: 500 })
     }
 }

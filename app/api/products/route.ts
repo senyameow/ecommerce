@@ -56,7 +56,6 @@ export async function POST(req: Request) {
         return NextResponse.json(product, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_PRODUCT_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }
@@ -104,7 +103,6 @@ export async function GET(req: Request) {
         return NextResponse.json(products, { status: 200 })
 
     } catch (error) {
-        console.log('GET_PRODUCTS_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

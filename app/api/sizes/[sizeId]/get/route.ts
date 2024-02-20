@@ -26,7 +26,6 @@ export async function GET(req: Request, { params }: { params: { sizeId: string }
         return NextResponse.json(size, { status: 200 })
 
     } catch (error) {
-        console.log('GET_CATEGORY_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

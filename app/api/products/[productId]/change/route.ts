@@ -51,7 +51,6 @@ export async function PATCH(req: Request, { params }: { params: { productId: str
 
 
     } catch (error) {
-        console.log(error)
         return new NextResponse('Internal Error', { status: 500 })
     }
 }

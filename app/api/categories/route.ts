@@ -30,7 +30,6 @@ export async function POST(req: Request) {
         return NextResponse.json(category, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_STORE_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }
@@ -55,7 +54,6 @@ export async function GET(req: Request) {
         return NextResponse.json(categories, { status: 200 })
 
     } catch (error) {
-        console.log(error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

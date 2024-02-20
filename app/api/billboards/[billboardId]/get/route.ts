@@ -24,7 +24,6 @@ export async function GET(req: Request, { params }: { params: { billboardId: str
         return NextResponse.json(billboard, { status: 200 })
 
     } catch (error) {
-        console.log('GET_BILLBOARD_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

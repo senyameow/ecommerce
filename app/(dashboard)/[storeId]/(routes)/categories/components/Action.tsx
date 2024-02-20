@@ -47,7 +47,6 @@ export const CategoryAction = ({ category }: ActionProps) => {
 
 
         } catch (error) {
-            console.log('DELETE_CATEGORY_ERROR', error)
         } finally {
             setIsLoading(false)
             onClose()
@@ -69,7 +68,6 @@ export const CategoryAction = ({ category }: ActionProps) => {
                     </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem disabled={isLoading} onClick={() => {
-                    console.log(category)
                     onOpen('updateCategory', { category, storeId: params?.storeId as string })
                 }}>
                     <div className="flex flex-row items-center">
@@ -84,9 +82,6 @@ export const CategoryAction = ({ category }: ActionProps) => {
                     </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem disabled={isLoading} onClick={onDelete}>
-                    <button onClick={() => console.log(category)} className="flex flex-row items-center">
-                        check category
-                    </button>
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

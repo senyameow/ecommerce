@@ -47,7 +47,6 @@ export const Action = ({ size }: ActionProps) => {
 
 
         } catch (error) {
-            console.log('DELETE_BILLBOARD_ERROR', error)
         } finally {
             setIsLoading(false)
             onClose()

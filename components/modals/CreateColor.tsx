@@ -67,7 +67,6 @@ export const ColorModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING SIZE ERROR')
         } finally {
             setLoading(false)
             onClose()

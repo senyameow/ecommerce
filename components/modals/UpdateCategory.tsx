@@ -65,7 +65,6 @@ export const CategoryUpdateModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING STORE ERROR')
         } finally {
             setLoading(false)
             onClose()
@@ -83,7 +82,6 @@ export const CategoryUpdateModal = () => {
 
     useEffect(() => {
         if (billboard) {
-            console.log(category)
             form.setValue('label', category?.label as string);
         } // вот так можно реализовывать едитинг формы (т.е. открывается модалка, и когда она загрузилась там уже в полях есть предыдущие значения)
     }, [form, category])

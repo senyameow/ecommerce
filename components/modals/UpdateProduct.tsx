@@ -70,8 +70,6 @@ export const UpdateProduct = () => {
     })
 
     useEffect(() => {
-        console.log(values)
-        console.log(defaultVal)
         if (values) {
             form.setValue('label', values?.label);
             form.setValue('isArchived', values?.isArchived);
@@ -102,7 +100,6 @@ export const UpdateProduct = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING PRODUCT ERROR')
         } finally {
             setLoading(false)
             onClose()

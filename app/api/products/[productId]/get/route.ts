@@ -29,7 +29,6 @@ export async function GET(req: Request, { params }: { params: { productId: strin
         return NextResponse.json(product, { status: 200 })
 
     } catch (error) {
-        console.log('GET_product_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

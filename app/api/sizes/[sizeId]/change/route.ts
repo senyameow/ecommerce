@@ -37,7 +37,6 @@ export async function PATCH(req: Request, { params }: { params: { sizeId: string
 
 
     } catch (error) {
-        console.log(error)
         return new NextResponse('Internal Error', { status: 500 })
     }
 }

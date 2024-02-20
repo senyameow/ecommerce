@@ -39,7 +39,6 @@ export async function POST(req: Request) {
         return NextResponse.json(billboard, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_BILLBOARD_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }
@@ -70,7 +69,6 @@ export async function GET(req: Request) {
         return NextResponse.json(billboards, { status: 200 })
 
     } catch (error) {
-        console.log('GET_BILLBOARD_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

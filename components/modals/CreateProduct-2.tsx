@@ -65,7 +65,6 @@ export const ProductModalTwo = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING PRODUCT ERROR')
         } finally {
             setLoading(false)
             onClose()

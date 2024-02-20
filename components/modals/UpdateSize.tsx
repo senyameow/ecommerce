@@ -66,7 +66,6 @@ export const SizeUpdateModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'UPDATING SIZE ERROR')
         } finally {
             setLoading(false)
             onClose()
@@ -85,7 +84,6 @@ export const SizeUpdateModal = () => {
 
     useEffect(() => {
         if (size) {
-            console.log(size)
             form.setValue('label', size?.label as string);
             form.setValue('value', size?.value as string);
         } // вот так можно реализовывать едитинг формы (т.е. открывается модалка, и когда она загрузилась там уже в полях есть предыдущие значения)

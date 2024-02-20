@@ -24,7 +24,6 @@ export async function POST(req: Request) {
         return NextResponse.json(store, { status: 200 })
 
     } catch (error) {
-        console.log('CREATE_STORE_ERROR', error)
         return new NextResponse('internal error', { status: 500 })
     }
 }

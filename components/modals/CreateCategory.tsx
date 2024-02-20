@@ -66,7 +66,6 @@ export const CategoryModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING STORE ERROR')
         } finally {
             setLoading(false)
             onClose()

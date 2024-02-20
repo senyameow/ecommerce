@@ -69,8 +69,6 @@ export const ProductModalOne = () => {
     })
 
     useEffect(() => {
-        console.log(values)
-        console.log(defaultVal)
         if (values) {
             form.setValue('label', values?.label);
             form.setValue('isArchived', values?.isArchived);
@@ -84,10 +82,8 @@ export const ProductModalOne = () => {
 
     const onNext = async (values: z.infer<typeof formSchema>) => {
         try {
-            console.log(values)
             onOpen('createProduct-2', { values, colors, sizes, categories, storeId, defaultVal })
         } catch (error) {
-            console.log(error)
         }
     }
 

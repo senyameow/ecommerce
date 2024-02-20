@@ -67,7 +67,6 @@ export const BillboardUpdateModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'CREATING STORE ERROR')
         } finally {
             setLoading(false)
             onClose()
@@ -85,8 +84,6 @@ export const BillboardUpdateModal = () => {
     })
 
     useEffect(() => {
-        console.log('mounted')
-        console.log(billboard)
         if (billboard) {
             form.setValue('label', billboard.label);
             form.setValue('image_url', billboard.image_url);

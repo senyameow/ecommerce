@@ -66,7 +66,6 @@ export const ColorUpdateModal = () => {
 
         } catch (error) {
             toast.error('something went wrong')
-            console.log(error, 'UPDATING color ERROR')
         } finally {
             setLoading(false)
             onClose()
@@ -85,7 +84,6 @@ export const ColorUpdateModal = () => {
 
     useEffect(() => {
         if (color) {
-            console.log(color)
             form.setValue('label', color?.label as string);
             form.setValue('value', color?.value as string);
         } // вот так можно реализовывать едитинг формы (т.е. открывается модалка, и когда она загрузилась там уже в полях есть предыдущие значения)
