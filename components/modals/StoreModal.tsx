@@ -82,7 +82,7 @@ export const StoreModal = () => {
                                     <FormItem>
                                         <FormLabel>Store Name</FormLabel>
                                         <FormControl>
-                                            <Input disabled={loading} placeholder="shadcn" {...field} className="border border-black ring-0 ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 outline-none " />
+                                            <Input disabled={loading} placeholder="admin" {...field} className="border border-black ring-0 ring-offset-0 focus-visible:ring-offset-0 focus-visible:ring-0 outline-none " />
                                         </FormControl>
 
                                         <FormMessage />
